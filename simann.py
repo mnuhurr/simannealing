@@ -23,7 +23,7 @@ def minimize(start_state, fstateval, fnewstate, maxrounds=10000, temp_update_int
     vbest = v
 
     # is this a good heuristic for picking the initial temperature
-    temp = v
+    temp = np.abs(v)
 
     loop = True
 
